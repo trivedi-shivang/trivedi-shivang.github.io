@@ -1,0 +1,97 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+}
+
+.order-summary-details, .pricing-details, .annual-pricing {
+    display: flex;
+}
+
+.order-summary-container {
+    margin: 5em auto;
+    width: 40%;
+    max-width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.hero-image {
+    background-image: url(../images/illustration-hero.svg);
+    background-position: center;
+    height: 220px;
+}
+
+.order-summary-details {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.order-summary-details > h1 {
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.order-summary-details > * {
+    text-align:center;
+}
+
+.pricing-details {
+    flex-direction: row;
+    margin: 20px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+}
+
+.annual-pricing {
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.plan-type {
+    font-weight: 700;
+}
+
+.annual-pricing > span {
+    padding-top: 5px;
+}
+
+.price-change-button, .payment-button, .cancel-order-button {
+    border:0;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.price-change-button {
+    margin-left: auto;
+    padding: 15px 0;
+    color: hsl(245, 75%, 52%);
+}
+
+/* .payment-button, .cancel-order-button {
+    padding
+} */
+
+.payment-button {
+    margin: 20px 20px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 10px 50px;
+}
