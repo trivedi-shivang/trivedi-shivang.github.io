@@ -21,7 +21,7 @@ body {
     display: flex;
 }
 
-.order-summary-container {
+body {
     margin: 5em auto;
     width: 100%;
     max-width: 350px;
@@ -115,7 +115,7 @@ body {
 }
 
 @media all and (min-width: 600px){
-    .order-summary-container, .order-summary-details {
+    body, .order-summary-details {
         max-width: 450px;
     }
 }
