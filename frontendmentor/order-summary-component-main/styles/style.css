@@ -23,8 +23,9 @@ body {
 
 .order-summary-container {
     margin: 5em auto;
-    width: 40%;
-    max-width: 450px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1em;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
@@ -34,10 +35,12 @@ body {
     background-image: url(../images/illustration-hero.svg);
     background-position: center;
     height: 220px;
+    border-radius: 1em 1em 0 0;
 }
 
 .order-summary-details {
-    width: 90%;
+    width: 100%;
+    max-width: 350px;
     margin: auto;
     flex-direction: column;
 }
@@ -83,10 +86,6 @@ body {
     color: hsl(245, 75%, 52%);
 }
 
-/* .payment-button, .cancel-order-button {
-    padding
-} */
-
 .payment-button {
     margin: 20px 20px;
     background-color: hsl(245, 75%, 52%);
@@ -94,4 +93,19 @@ body {
     font-weight: 700;
     border-radius: 6px;
     padding: 10px 50px;
+    box-shadow: 0 20px 20px 7px hsl(225deg 100% 94%);
+}
+
+.cancel-order-button, .plan-price {
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel-order-button {
+    margin-bottom: 40px;
+}
+
+@media all and (min-width: 600px){
+    .order-summary-container, .order-summary-details {
+        max-width: 450px;
+    }
 }
