@@ -55,6 +55,10 @@ body {
     text-align:center;
 }
 
+.order-summary-details > p {
+    color: hsl(224, 23%, 55%);
+}
+
 .pricing-details {
     flex-direction: row;
     margin: 20px;
@@ -79,12 +83,18 @@ body {
     border:0;
     cursor: pointer;
     font-weight: 900;
+    text-decoration: none;
+}
+
+.payment-button:hover {
+    background-color: hsl(245, 75%, 60%);
 }
 
 .price-change-button {
     margin-left: auto;
     padding: 15px 0;
     color: hsl(245, 75%, 52%);
+    text-decoration: underline;
 }
 
 .payment-button {
