@@ -75,10 +75,10 @@ body {
     padding-top: 5px;
 }
 
-.price-change-button, .payment-button, .cancel-order-button {
+.price-change-button:hover, .payment-button:hover, .cancel-order-button:hover {
     border:0;
-    background-color: inherit;
     cursor: pointer;
+    font-weight: 900;
 }
 
 .price-change-button {
@@ -91,7 +91,6 @@ body {
     margin: 20px 20px;
     background-color: hsl(245, 75%, 52%);
     color: white;
-    font-weight: 700;
     border-radius: 6px;
     padding: 10px 50px;
     box-shadow: 0 20px 20px 7px hsl(225deg 100% 94%);
