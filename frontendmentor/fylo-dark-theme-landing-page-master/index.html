@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
@@ -15,16 +24,30 @@
   </style>
 </head>
 <body>
-  Features
-  Team
-  Sign In
+  <nav aria-labelledby="primary-navigation" class="primary-navigation">
+    <ul id="primary-navigation__items" class="primary-navigation__items">
+      <li class="primary-navigation__logo-and-name">
+        <a href="#">
+          <i class="fas fa-layer-group"></i>
+          Fylo
+        </a>
+      </li>
+      <li>Features</li>
+      <li>Team</li>
+      <li>Sign In</li>
+    </ul>
+  </nav>
+  
+  <article class="introduction">
+    <div class="introduction__bgs">
+    </div>
+  </article>
+  <h1 class="introduction__tagline">All your files in one secure location, accessible anywhere.</h1>
+  <p class="introduction__long">Fylo stores all your most important files in one secure location. Access them wherever 
+    you need, share and collaborate with friends family, and co-workers.
+  </p>
 
-  All your files in one secure location, accessible anywhere.
-
-  Fylo stores all your most important files in one secure location. Access them wherever 
-  you need, share and collaborate with friends family, and co-workers.
-
-  Get Started
+  <!-- Get Started
 
   Access your files, anywhere
 
@@ -94,13 +117,13 @@
 
   Contact Us
   Terms
-  Privacy
+  Privacy -->
 
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>
