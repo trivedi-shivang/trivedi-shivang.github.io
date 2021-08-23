@@ -51,7 +51,6 @@ a {
 }
 
 .introduction {
-    height: 33em;
     font-family: 'Raleway';
 }
 
@@ -59,10 +58,9 @@ a {
     background-image: url('../images/illustration-intro.png'), url('../images/bg-curvy-mobile.svg');
     background-repeat: no-repeat;
     background-attachment: scroll, scroll;
-    background-size: 80%, 112%;
-    background-position-x: center, 41%;
-    background-position-y: center, bottom;
-    height: auto;
+    background-size: contain, contain;
+    background-position: center;
+    height: 40vw;
     position: relative;
     margin:auto;
 }
@@ -86,29 +84,17 @@ a {
     padding: 0 3em;
 }
 
-
-@media (min-width: 40em) {
-    .introduction {
-        height: 66em;
+@media (min-width: 45em) {
+    .introduction__bgs {
+        background-size: auto, contain;
+        height: 60em;
+        background-position: center top, center bottom;
     }
+}
 
+@media (min-width: 75em) {
     .introduction__bgs {
         background-image: url('../images/illustration-intro.png'), url('../images/bg-curvy-desktop.svg');
-        background-repeat:no-repeat;
-        background-position-x: center;
-        background-position-y: 20%, bottom;
-        background-size: 67%, contain;
-        height: 1000px;
-    }
-
-    .introduction__tagline {
-        width: 100%;
-        padding: 0 4em;
-    }
-
-    .introduction__long {
-        top: 85%;
-        width: 100%;
-        padding: 0 8em;
+        background-size: auto, auto;
     }
 }

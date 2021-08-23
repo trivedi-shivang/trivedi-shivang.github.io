@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Space Mono';
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 50em){
+    body {
+        max-width: 50em;
+        margin: auto;
+        border-radius: 1em;
+        padding: 1em;
+    }
+}
+
+
+.logo {
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    margin: 1em auto;
+    height: 6em;
+    background-position: center;
+}
+
+.tip-calculator {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em 1em 0 0;
+    display: grid;
+    padding: 2em;
+    height: 100vh;
+}
+
+.form-field > label {
+    margin: 1em 0;
+}
+
+.form-field > input, .tip-percentage-options {
+    margin: 1em 0 2em 0;
+}
+
+.form-field > label, .form-field > input {
+    width: 100%;
+}
+
+.tip-percentage-options {
+    display:grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 2em);
+    gap: 1em;
+    margin: 1em 0, 0, 0;
+}
+
+.tip-percentage-options > button {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.3em;
+}
+
+#no-of-people {
+    position: relative;
+}
+
+/* .no-of-people > img {
+    position: absolute;
+    right: 10px;
+} */
+
