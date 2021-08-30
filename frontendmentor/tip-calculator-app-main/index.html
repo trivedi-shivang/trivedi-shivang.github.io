@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="logo"></div>
+  <div class="tip-calculator">
+    <div class="bill-and-tip-input">
+      <form action="">
+        <div class="bill-amount form-field">
+          <label for="bill-amount">Bill</label>
+          <input type="number" name="bill-amount" id="bill-amount">
+        </div>
+        <div class="tip-percentage form-field">
+          <label for="tip-percentage">Select Tip %</label>
+          <div class="tip-percentage-options">
+            <button type="button">5%</button>
+            <button type="button">10%</button>
+            <button type="button">15%</button>
+            <button type="button">25%</button>
+            <button type="button">50%</button>
+            <button type="button">Custom</button>
+          </div>
+        </div>
+        <div class="no-of-people form-field">
+          <label for="no-of-people">Number of People</label>
+          <input type="number" name="no-of-people" id="no-of-people">
+          <img src="../tip-calculator-app-main/images/icon-person.svg" alt="Number of People Icon (SVG format)">
+        </div>
+      </form>
+    </div>
+    <div class="tip-result">
+      <div class="tip-details">
+        <div class="tip-amount-per-person-label">
+          <span class="tip-amount-label">Tip Amount</span>
+          <span class="per-person-label">/ person</span>
+        </div>
+        <span class="tip-amount-per-person-value">$0.00</span>
+        <div class="total-per-person-label">
+          <span class="total-label">Total</span>
+          <span class="per-person-label">/ person</span>
+        </div>
+        <span class="total-per-person-value">$0.00</span>
+      </div>
+      <div class="tip-reset-button-container">
+        <button class="tip-reset-button" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shivang</a>.
+  </div>
+</body>
+</html>
