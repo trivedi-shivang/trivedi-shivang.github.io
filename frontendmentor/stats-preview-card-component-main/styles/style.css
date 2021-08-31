@@ -93,6 +93,15 @@ p {
     border-radius: 0.5em 0.5em 0 0;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
 @media (min-width: 50em){
     .preview-card-container {
         margin-top: 10em;
