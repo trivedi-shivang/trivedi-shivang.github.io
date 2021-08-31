@@ -1,0 +1,23 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lexend Deca', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    width: 95%;
+    margin: 3em auto;
+    display: grid;
+    grid-auto-rows: repeat(3, minmax(1fr, 30em));
+    grid-template-columns: 1fr;
+}
