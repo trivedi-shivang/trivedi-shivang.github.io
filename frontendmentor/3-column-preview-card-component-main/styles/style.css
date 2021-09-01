@@ -12,12 +12,132 @@ body {
     font-family: 'Lexend Deca', Helvetica, Arial, sans-serif;
     font-size: 15px;
     background-color: hsl(0, 0%, 95%);
+    color: white;
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: 3em auto;
     display: grid;
-    grid-auto-rows: repeat(3, minmax(1fr, 30em));
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 1fr;
+}
+
+.column {
+    display: grid;
+    padding: 2.5em 2.5em 4em;
+}
+
+.column:first-child {
+    border-radius: 1em 1em 0 0;
+}
+
+.column:last-child {
+    border-radius: 0 0 1em 1em;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    height: 3em;
+}
+
+.sedan-car.icon {
+    background-image: url('../images/icon-sedans.svg');
+}
+
+.suv-car.icon {
+    background-image: url('../images/icon-suvs.svg');
+}
+
+.luxury-car.icon {
+    background-image: url('../images/icon-luxury.svg');
+}
+
+.bright-orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+p {
+    word-spacing: 5px;
+    margin-bottom: 2em;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    width: 10em;
+    padding: 1em 2em;
+    color: hsl(31, 77%, 52%);
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 4em;
+}
+
+.bright-orange-button {
+    border-color: hsl(31, 77%, 52%);
+    color: hsl(31, 77%, 52%);
+}
+
+.dark-cyan-button {
+    border-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan-button {
+    border-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+button:hover {
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+}
+
+.attribution { 
+    font-size: 11px; 
+    color: hsl(228, 45%, 44%); 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: inherit;
+}
+
+@media (min-width: 50em) {
+    .container {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10em;
+    }
+
+    .column {
+        padding-top: 5em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .column:first-child {
+        border-radius: 1em 0 0 1em;
+    }
+    
+    .column:last-child {
+        border-radius: 0 1em 1em 0;
+    }
 }
