@@ -89,17 +89,17 @@ p {
     border-radius: 4em;
 }
 
-.bright-orange-link {
+.bright-orange-contrast {
     border-color: hsl(31, 77%, 52%);
     color: hsl(31, 77%, 52%);
 }
 
-.dark-cyan-link {
+.dark-cyan-contrast {
     border-color: hsl(184, 100%, 22%);
     color: hsl(184, 100%, 22%);
 }
 
-.very-dark-cyan-link {
+.very-dark-cyan-contrast {
     border-color: hsl(179, 100%, 13%);
     color: hsl(179, 100%, 13%);
 }
