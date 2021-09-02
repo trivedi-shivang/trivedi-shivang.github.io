@@ -79,7 +79,7 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
 }
 
-button {
+.pill-link {
     width: 10em;
     padding: 1em 2em;
     color: hsl(31, 77%, 52%);
@@ -89,21 +89,21 @@ button {
     border-radius: 4em;
 }
 
-.bright-orange-button {
+.bright-orange-link {
     border-color: hsl(31, 77%, 52%);
     color: hsl(31, 77%, 52%);
 }
 
-.dark-cyan-button {
+.dark-cyan-link {
     border-color: hsl(184, 100%, 22%);
     color: hsl(184, 100%, 22%);
 }
 
-.very-dark-cyan-button {
+.very-dark-cyan-link {
     border-color: hsl(179, 100%, 13%);
     color: hsl(179, 100%, 13%);
 }
-button:hover {
+.pill-link:hover {
     cursor: pointer;
     background-color: inherit;
     color: white;
