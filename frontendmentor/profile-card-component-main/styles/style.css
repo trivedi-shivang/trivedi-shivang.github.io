@@ -11,10 +11,11 @@
 body {
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-repeat: no-repeat;
-    background-position: calc(100% - 30em) calc(100% - 38em), calc(200% - 58em) calc(200% - 99em);
+    background-position: calc(100% - 11em) calc(100% - 18em), calc(100% + 47em) calc(100% + 32em);
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', Helvetica, Arial, sans-serif;
     font-weight: 400;
+    font-weight: 18px;
 }
 
 
@@ -36,7 +37,7 @@ main {
 
 @media (min-width: 50em){
     body {
-        background-position: calc(100% - 30em) calc(100% - 38em), calc(200% - 58em) calc(200% - 99em);
+        background-position: calc(100% - 49em) calc(100% - 20em), calc(100% + 17em) calc(100% + 39em);
         padding: 10em 5em;
     }
 
@@ -110,6 +111,7 @@ main {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
+    color: hsl(229, 23%, 23%);
 }
 
 .stat-for {
