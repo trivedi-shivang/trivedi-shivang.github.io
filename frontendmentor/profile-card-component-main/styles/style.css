@@ -9,13 +9,14 @@
 }
 
 body {
-    /* background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-repeat: no-repeat;
-    background-position: 130%, -22% -30%; */
+    background-position: calc(100% - 30em) calc(100% - 38em), calc(200% - 58em) calc(200% - 99em);
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
+
 
 main {
     width: 90%;
@@ -24,6 +25,25 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 3fr 2fr;
     border-radius: 0 0 1em 1em;
+}
+
+@media (min-width: 25em) {
+    main {
+        width: 25em;
+    }
+}
+
+
+@media (min-width: 50em){
+    body {
+        background-position: calc(100% - 30em) calc(100% - 38em), calc(200% - 58em) calc(200% - 99em);
+        padding: 10em 5em;
+    }
+
+    main {
+        margin: auto;
+        width: 30em;
+    }
 }
 
 .card-top-background {
@@ -72,7 +92,7 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     background-color: white;
-    border-top: 1px solid hsl(227, 10%, 46%);
+    border-top: 1.5px solid hsl(227, 10%, 46%);
     padding: 2em;
     border-radius: 0 0 1em 1em;
 }
@@ -104,10 +124,4 @@ main {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
-
-@media (min-width: 50em) {
-    main {
-        width: 30%;
-    }
 }
