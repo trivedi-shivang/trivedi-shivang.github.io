@@ -24,7 +24,7 @@ main {
     margin: 10em auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 3fr 2fr;
+    grid-template-rows: 2fr 2fr 1.5fr;
     border-radius: 0 0 1em 1em;
 }
 
