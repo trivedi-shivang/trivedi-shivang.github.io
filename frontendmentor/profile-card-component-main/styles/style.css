@@ -1,5 +1,10 @@
+/* General Styles */
 :root {
     box-sizing: border-box;
+    --color-dark-cyan: hsl(185, 75%, 39%);
+    --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --color-dark-greyish-blue: hsl(227, 10%, 46%);
+    --color-dark-grey: hsl(0, 0%, 59%);
 }
 
 *,
@@ -12,7 +17,7 @@ body {
     background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-repeat: no-repeat;
     background-position: calc(100% - 11em) calc(100% - 18em), calc(100% + 47em) calc(100% + 32em);
-    background-color: hsl(185, 75%, 39%);
+    background-color: var(--color-dark-cyan);
     font-family: 'Kumbh Sans', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-weight: 18px;
@@ -76,11 +81,11 @@ main {
 .name-and-age {
     font-size: 1.5em;
     font-weight: 700;
-    color: hsl(229, 23%, 23%);
+    color: var(--color-very-dark-desaturated-blue);
 }
 
 .age, .city, .stat-for {
-    color: hsl(227, 10%, 46%);
+    color: var(--color-dark-greyish-blue);
 }
 
 .city {
@@ -93,7 +98,7 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     background-color: white;
-    border-top: 1.5px solid hsl(227, 10%, 46%);
+    border-top: 1.5px solid var(--color-dark-greyish-blue);
     padding: 2em;
     border-radius: 0 0 1em 1em;
 }
@@ -111,7 +116,7 @@ main {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
-    color: hsl(229, 23%, 23%);
+    color: var(--color-very-dark-desaturated-blue);
 }
 
 .stat-for {
