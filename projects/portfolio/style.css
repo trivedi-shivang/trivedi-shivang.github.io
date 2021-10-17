@@ -1,0 +1,94 @@
+/* Global Styles */
+:root {
+    --main-redish: #be3144;
+    --main-white: #fff;
+    --main-black: #333;
+    --main-dark-blueish: #303841;
+    --main-light-blueish: #45567d;
+    box-sizing: border-box;
+    font-size: 1em;
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top:0;
+    background-color: var(--main-redish);
+    font-size: 1.2em;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+header nav ul li {
+    color: var(--main-white);
+    padding: 1em 2em 1em 0;
+}
+
+header nav ul li:first-child {
+    margin-left: auto;
+}
+
+/* Section */
+.about, #contact {
+    height: 100vh;
+    display:flex;
+}
+
+.about {
+    background:linear-gradient(225deg, var(--main-black), var(--main-dark-blueish));
+    color: var(--main-white)
+}
+
+.who-am-i {
+    font-size: 3em;
+    margin: auto;
+    padding: 0 1em;
+}
+
+.profession {
+    color: var(--main-redish);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.work {
+    flex-direction: column;
+    background-color: var(--main-light-blueish);
+    color: var(--main-white);
+    text-align: center;
+    padding: 5em 10em;
+    font-size: 1.3em;
+}
+
+.projects-heading {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.projects img {
+    width: 200px;
+    height: 200px;
+}
+
+.show-all-projects {
+    display: inline-block;
+}
+
+/* Footer */
