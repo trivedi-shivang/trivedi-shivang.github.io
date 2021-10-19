@@ -22,8 +22,9 @@
     <div class="bill-and-tip-input">
       <form action="">
         <div class="bill-amount form-field">
+          <i class="fas fa-dollar-sign input-icon"></i>
           <label for="bill-amount">Bill</label>
-          <input type="number" name="bill-amount" id="bill-amount" step="2" value="0">
+          <input type="number" name="bill-amount" id="bill-amount" step="2">
         </div>
         <div class="tip-percentage form-field">
           <label for="tip-percentage">Select Tip %</label>
@@ -37,9 +38,9 @@
           </div>
         </div>
         <div class="no-of-people form-field">
+          <i class="fa fa-user input-icon"></i>
           <label for="no-of-people">Number of People</label>
-          <input type="number" name="no-of-people" id="no-of-people" value="0">
-          <img src="../tip-calculator-app-main/images/icon-person.svg" alt="Number of People Icon (SVG format)">
+          <input type="number" name="no-of-people" id="no-of-people">
         </div>
       </form>
     </div>
@@ -49,12 +50,14 @@
           <span class="tip-amount-label">Tip Amount</span>
           <span class="per-person-label">/ person</span>
         </div>
-        <span class="tip-amount-per-person-value">$0.00</span>
+        <i class="fas fa-dollar-sign tip-amount-per-person-icon"></i>
+        <span class="tip-amount-per-person-value">0.00</span>
         <div class="total-per-person-label">
           <span class="total-label">Total</span>
           <span class="per-person-label">/ person</span>
         </div>
-        <span class="total-per-person-value">$0.00</span>
+        <i class="fas fa-dollar-sign total-per-person-icon"></i>
+        <span class="total-per-person-value">0.00</span>
       </div>
       <div class="tip-reset-button-container">
         <button class="tip-reset-button" type="button">Reset</button>
