@@ -1,3 +1,12 @@
+:root {
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --dark-grayish-cyan2: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --light-grayish-cyan2: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
 html {
     box-sizing: border-box;
 }
@@ -10,8 +19,8 @@ html {
 
 body {
     font-family: 'Space Mono';
-    background-color: hsl(185, 41%, 84%);
-    color: hsl(183, 100%, 15%);
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
     font-weight: 700;
     width: 100%;
     margin: auto;
@@ -27,6 +36,21 @@ body {
     }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+    border: 0;
+}
+input:focus {
+    border: 1px solid var(--dark-grayish-cyan2);
+}
+
 
 .logo {
     background-image: url('../images/logo.svg');
@@ -37,7 +61,7 @@ body {
 }
 
 .tip-calculator {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
     border-radius: 1em 1em 0 0;
     display: grid;
     gap: 2.5em;
@@ -62,17 +86,16 @@ body {
 }
 
 .form-field > label {
-    color: hsl(186, 14%, 43%);
+    color: var(--dark-grayish-cyan);
 }
 
 .form-field > input {
-    border: 0;
     font-size: 1.5em;
-    background-color: hsl(189, 41%, 97%);
+    background-color: var(--light-grayish-cyan2);
     padding: 0.3em;
     text-align: right;
     font-weight: 900;
-    color: hsl(183, 100%, 15%);
+    color: var(--very-dark-cyan);
 }
 
 .tip-percentage-options {
@@ -92,7 +115,7 @@ body {
 }
 
 .tip-percentage-options > button {
-    background-color: hsl(183, 100%, 15%);
+    background-color: var(--very-dark-cyan);
     color: white;
     font-weight: 700;
     font-size: 1.2rem;
@@ -102,9 +125,23 @@ body {
     height: 2em;
 }
 
-.tip-percentage-options > button:last-child {
-    background-color: hsl(189, 41%, 97%);
-    color: hsl(184, 14%, 56%);
+.tip-percentage-options > button:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.tip-percentage-options > button:focus {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.tip-percentage-options > input {
+    background-color: var(--light-grayish-cyan2);
+    color: var(--dark-grayish-cyan2);
+    width: 100px;
+    border: 0;
+    text-align: center;
+    font-weight: 700;
 }
 
 #no-of-people {
@@ -118,13 +155,13 @@ body {
 
 
 .tip-result {
-    background-color: hsl(183, 100%, 15%);
+    background-color: var(--very-dark-cyan);
     border-radius: 1em 1em 1em 1em;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 1em;
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
 }
 
 .tip-details {
@@ -146,8 +183,17 @@ body {
     text-align: left;
 }
 
+.per-person-label {
+    color: var(--dark-grayish-cyan);
+}
+
+.tip-amount-per-person-value, .total-per-person-value {
+    font-size: 1.5em;
+}
+
 .tip-reset-button-container {
     text-align: center;
+    margin-top: auto;
 }
 
 .tip-reset-button {
@@ -158,7 +204,13 @@ body {
     border-radius: 0.3em;
     font-weight: 900;
     text-transform: uppercase;
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
+    background-color: var(--dark-grayish-cyan);
+    color: var(--very-dark-cyan);
     margin: 1em 0.3em;
+}
+
+
+.tip-reset-button:hover {
+    cursor: pointer;
+    background-color: var(--light-grayish-cyan);
 }

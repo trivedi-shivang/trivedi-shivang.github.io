@@ -23,22 +23,22 @@
       <form action="">
         <div class="bill-amount form-field">
           <label for="bill-amount">Bill</label>
-          <input type="number" name="bill-amount" id="bill-amount">
+          <input type="number" name="bill-amount" id="bill-amount" step="2" value="0">
         </div>
         <div class="tip-percentage form-field">
           <label for="tip-percentage">Select Tip %</label>
           <div class="tip-percentage-options">
-            <button type="button">5%</button>
-            <button type="button">10%</button>
-            <button type="button">15%</button>
-            <button type="button">25%</button>
-            <button type="button">50%</button>
-            <button type="button">Custom</button>
+            <button type="button" class="tip-percentage-option" value="5">5%</button>
+            <button type="button" class="tip-percentage-option" value="10">10%</button>
+            <button type="button" class="tip-percentage-option" value="15">15%</button>
+            <button type="button" class="tip-percentage-option" value="25">25%</button>
+            <button type="button" class="tip-percentage-option" value="50">50%</button>
+            <input type="number" class="tip-percentage-option" placeholder="Custom">
           </div>
         </div>
         <div class="no-of-people form-field">
           <label for="no-of-people">Number of People</label>
-          <input type="number" name="no-of-people" id="no-of-people">
+          <input type="number" name="no-of-people" id="no-of-people" value="0">
           <img src="../tip-calculator-app-main/images/icon-person.svg" alt="Number of People Icon (SVG format)">
         </div>
       </form>
@@ -66,5 +66,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Shivang</a>.
   </div>
+
+  <script defer src="./scripts/index.js"></script>
 </body>
 </html>
