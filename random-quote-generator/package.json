@@ -1,0 +1,17 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "A website which generates random-quote at the click of a button.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shivang Trivedi",
+  "license": "ISC",
+  "repository": {},
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "sass": "^1.45.2"
+  }
+}
