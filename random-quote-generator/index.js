@@ -1,33 +1,24 @@
 const quoteURL = "https://goquotes-api.herokuapp.com/api/v1/random?count=1";
 $(document).ready(function () {
-  //call api to fetch random quote
+  attachClickHandler();
   fetchQuote();
 });
 
+function attachClickHandler() {
+  $(".new-quote-button").click(function () {
+    fetchQuote();
+  });
+}
+
 // GET request to fetch quote and updates corresponding element's text.
 function fetchQuote() {
-  $.ajax({
-    url: quoteURL,
-    type: "GET",
-    tryCount: 0,
-    retryLimit: 3,
-    success: function (response) {
-      updateElementText("#quote-text", response.quotes[0].text);
-      updateElementText("#quote-author", response.quotes[0].author);
-    },
-    error: function (xhr, textStatus, errorThrown) {
-      if (textStatus == "timeout") {
-        this.tryCount++;
-        if (this.tryCount <= this.retryLimit) {
-          $.ajax(this);
-          return;
-        }
-        return;
-      }
-    },
+  $.get(quoteURL, function (response) {
+    updateElementText("#quote-text", response.quotes[0].text);
+    updateElementText("#quote-author", response.quotes[0].author);
   });
 }
 
 function updateElementText(el, text) {
+  $(el).fadeIn("slow");
   $(el).text(text);
 }
