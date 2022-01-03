@@ -33,11 +33,11 @@ body .quote-container .quote-image {
 body .quote-container #quote-box {
   margin: 2em 1.5em 0;
 }
-body .quote-container #quote-text {
+body .quote-container #text {
   font-weight: 700;
   font-size: 1.25em;
 }
-body .quote-container #quote-author {
+body .quote-container #author {
   align-self: center;
 }
 body .quote-container .author-and-buttons {

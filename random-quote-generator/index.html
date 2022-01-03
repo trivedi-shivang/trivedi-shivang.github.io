@@ -22,6 +22,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="assets/stylesheets/main.css" />
     <title>Quote Generator</title>
 
@@ -41,15 +45,21 @@
       <div class="quote-container">
         <img src="assets/images/drawers.jpg" alt="" class="quote-image" />
         <article id="quote-box">
-          <div id="quote-text"></div>
+          <div id="text"></div>
+          <div id="author"></div>
           <div class="author-and-buttons">
-            <div id="quote-author"></div>
-            <section id="buttons">
-              <div id="social-media-buttons"></div>
-              <button type="button" class="new-quote-button btn btn-secondary">
-                New Quote
-              </button>
-            </section>
+            <!-- <iframe
+              src="https://www.twitter.com/intent/tweet/"
+              frameborder="0"
+            ></iframe> -->
+            <button class="btn btn-secondary">
+              <a href="https://www.twitter.com/intent/tweet" id="tweet-quote"
+                ><i class="bi bi-twitter text-white"></i
+              ></a>
+            </button>
+            <button type="button" class="btn btn-secondary" id="new-quote">
+              New Quote
+            </button>
           </div>
         </article>
       </div>

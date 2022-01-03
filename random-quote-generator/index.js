@@ -1,11 +1,12 @@
 const quoteURL = "https://goquotes-api.herokuapp.com/api/v1/random?count=1";
+const twitterURL = "https://www.twitter.com/intent/tweet";
 $(document).ready(function () {
   attachClickHandler();
   fetchQuote();
 });
 
 function attachClickHandler() {
-  $(".new-quote-button").click(function () {
+  $("#new-quote").click(function () {
     fetchQuote();
   });
 }
@@ -13,12 +14,17 @@ function attachClickHandler() {
 // GET request to fetch quote and updates corresponding element's text.
 function fetchQuote() {
   $.get(quoteURL, function (response) {
-    updateElementText("#quote-text", response.quotes[0].text);
-    updateElementText("#quote-author", response.quotes[0].author);
+    updateElementText("#text", response.quotes[0].text);
+    updateElementText("#author", `~ ${response.quotes[0].author}`);
+    updateTwitterURL(response.quotes[0].text);
   });
 }
 
+function updateTwitterURL(tweetText) {
+  modifiedTwitterURL = `${twitterURL}?text=${tweetText}&hashtags=quotes`;
+  $("#tweet-quote").attr("href", modifiedTwitterURL);
+}
+
 function updateElementText(el, text) {
-  $(el).fadeIn("slow");
   $(el).text(text);
 }
