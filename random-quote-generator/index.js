@@ -21,7 +21,7 @@ function fetchQuote() {
 }
 
 function updateTwitterURL(tweetText) {
-  modifiedTwitterURL = `${twitterURL}?text=${tweetText}&hashtags=quotes`;
+  let modifiedTwitterURL = `${twitterURL}?text=${tweetText}&hashtags=quotes`;
   $("#tweet-quote").attr("href", modifiedTwitterURL);
 }
 
