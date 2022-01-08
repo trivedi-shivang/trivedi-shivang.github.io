@@ -9,7 +9,9 @@
   "author": "Shivang Trivedi",
   "license": "ISC",
   "repository": {},
-  "dependencies": {},
+  "dependencies": {
+    "jest": "^27.4.7"
+  },
   "devDependencies": {
     "prettier": "^2.5.1",
     "sass": "^1.45.2"
