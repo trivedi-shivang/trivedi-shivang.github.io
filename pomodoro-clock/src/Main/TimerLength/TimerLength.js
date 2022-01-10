@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import "./TimerLength.css";
 export default function TimerLength({ type, length, setTypeLength }) {
   return (
     <div className={`${type}-container`}>
       <h3 id={`${type}-label`}>{type.toUpperCase()} Length</h3>
-      <div className={`${type}-length-container`}>
+      <div className={`length-container`}>
         <FontAwesomeIcon
           id={`${type}-increment`}
           icon={faChevronUp}
